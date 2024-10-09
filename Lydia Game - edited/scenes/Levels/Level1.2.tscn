@@ -1,0 +1,793 @@
+[gd_scene load_steps=11 format=3 uid="uid://0l7iqahpgcrc"]
+
+[ext_resource type="Script" path="res://scenes/Levels/level_scripts/Level1_2.gd" id="1_r8x3g"]
+[ext_resource type="Texture2D" uid="uid://iyyvn4is4n0l" path="res://sprites/phone_text_screen_yellow-export-export.png" id="2_jk6d0"]
+[ext_resource type="Texture2D" uid="uid://lp0q8t2pmdal" path="res://sprites/image (1).png" id="4_rdqvn"]
+[ext_resource type="Texture2D" uid="uid://bjuuhatdjly1y" path="res://sprites/PLEASE.jpg" id="5_ybsww"]
+[ext_resource type="FontFile" uid="uid://d2x57q70kr1ns" path="res://sprites/Fonts/Retro Gaming.ttf" id="6_3w6xt"]
+[ext_resource type="Texture2D" uid="uid://bedr7utj2dvq7" path="res://sprites/grey_message.png" id="7_85wpj"]
+[ext_resource type="Texture2D" uid="uid://fpwyy860kilu" path="res://sprites/blue_message.png" id="8_rcnww"]
+[ext_resource type="Texture2D" uid="uid://pbbjjb566jdk" path="res://sprites/disgustCat.webp" id="9_gtxs8"]
+[ext_resource type="AudioStream" uid="uid://cwj5e5qqjmb1u" path="res://sprites/Fonts/imsg_sound-[AudioTrimmer.com].mp3" id="10_wthwp"]
+[ext_resource type="AudioStream" uid="uid://dirvj6olmayw" path="res://sprites/Fonts/imsg_recieved.mp3" id="11_wmoxc"]
+
+[node name="Level manager" type="Node2D"]
+script = ExtResource("1_r8x3g")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+metadata/_edit_lock_ = true
+
+[node name="Options" type="Marker2D" parent="."]
+position = Vector2(-553, 158)
+
+[node name="phone_imessage" type="Sprite2D" parent="."]
+position = Vector2(300, 3)
+scale = Vector2(0.595, 0.595)
+texture = ExtResource("2_jk6d0")
+
+[node name="M1" type="Marker2D" parent="phone_imessage"]
+position = Vector2(-252, -340)
+
+[node name="ML2" type="Marker2D" parent="phone_imessage"]
+position = Vector2(0, -280)
+rotation = 1.5708
+
+[node name="M2" type="Marker2D" parent="phone_imessage"]
+position = Vector2(-252, -215)
+
+[node name="M3" type="Marker2D" parent="phone_imessage"]
+position = Vector2(-252, -155)
+
+[node name="ML3" type="Marker2D" parent="phone_imessage"]
+position = Vector2(0, -135.378)
+rotation = 1.5708
+
+[node name="M4" type="Marker2D" parent="phone_imessage"]
+position = Vector2(-252, -75.3781)
+
+[node name="ML4" type="Marker2D" parent="phone_imessage"]
+position = Vector2(0, -10)
+rotation = 1.5708
+
+[node name="ML4_d" type="Marker2D" parent="phone_imessage"]
+position = Vector2(-85, -10)
+rotation = 1.5708
+scale = Vector2(0.989672, 1)
+
+[node name="ML4_e" type="Marker2D" parent="phone_imessage"]
+position = Vector2(-138.487, -10)
+rotation = 1.5708
+scale = Vector2(0.989672, 1)
+
+[node name="M5" type="Marker2D" parent="phone_imessage"]
+position = Vector2(-252, 55)
+
+[node name="ML5" type="Marker2D" parent="phone_imessage"]
+position = Vector2(-3.36133, 115)
+rotation = 1.5708
+
+[node name="M6" type="Marker2D" parent="phone_imessage"]
+position = Vector2(-252, 175)
+
+[node name="M7" type="Marker2D" parent="phone_imessage"]
+position = Vector2(-252, 235)
+
+[node name="M8" type="Marker2D" parent="phone_imessage"]
+position = Vector2(-252, 295)
+
+[node name="BG" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(8, -40)
+texture = ExtResource("4_rdqvn")
+metadata/_edit_lock_ = true
+
+[node name="Please" type="Sprite2D" parent="."]
+position = Vector2(305, -116)
+scale = Vector2(0.28, 0.28)
+texture = ExtResource("5_ybsww")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="date2" type="Label" parent="Control"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 242.0
+offset_top = -188.0
+offset_right = 368.0
+offset_bottom = -165.0
+theme_override_fonts/font = ExtResource("6_3w6xt")
+theme_override_font_sizes/font_size = 10
+text = "02/18/2022 10:36PM"
+
+[node name="A1_1" type="NinePatchRect" parent="Control"]
+layout_mode = 0
+offset_left = 1153.0
+offset_top = -14.0
+offset_right = 1312.0
+offset_bottom = 37.0
+scale = Vector2(0.45904, 0.622948)
+pivot_offset = Vector2(0, 50.7934)
+texture = ExtResource("7_85wpj")
+region_rect = Rect2(26, 21, 171, 82)
+patch_margin_left = 75
+patch_margin_top = 25
+patch_margin_right = 84
+patch_margin_bottom = 26
+
+[node name="Label" type="Label" parent="Control/A1_1"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 41.3907
+offset_top = 7.78277
+offset_right = 77.3907
+offset_bottom = 30.7828
+scale = Vector2(2.07842, 1.74355)
+theme_override_constants/line_spacing = 0
+theme_override_font_sizes/font_size = 13
+text = "Hey :]"
+
+[node name="L1_1a" type="NinePatchRect" parent="Control"]
+layout_mode = 0
+offset_left = 1424.0
+offset_top = 34.0
+offset_right = 1583.0
+offset_bottom = 85.0
+scale = Vector2(1.01157, 0.662768)
+pivot_offset = Vector2(-0.769058, 49.7043)
+texture = ExtResource("8_rcnww")
+region_rect = Rect2(4, 10, 171, 81)
+patch_margin_left = 78
+patch_margin_top = 25
+patch_margin_right = 79
+patch_margin_bottom = 26
+
+[node name="Label" type="Label" parent="Control/L1_1a"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 43.4879
+offset_top = 7.9034
+offset_right = 116.488
+offset_bottom = 30.9034
+scale = Vector2(0.922703, 1.54433)
+theme_override_constants/line_spacing = 0
+theme_override_font_sizes/font_size = 13
+text = "fuck you >:["
+
+[node name="L1_1b" type="NinePatchRect" parent="Control"]
+layout_mode = 0
+offset_left = 1593.0
+offset_top = 36.0
+offset_right = 1752.0
+offset_bottom = 87.0
+scale = Vector2(1.01106, 0.672189)
+pivot_offset = Vector2(-0.769058, 49.7043)
+texture = ExtResource("8_rcnww")
+region_rect = Rect2(4, 10, 171, 81)
+patch_margin_left = 78
+patch_margin_top = 25
+patch_margin_right = 79
+patch_margin_bottom = 26
+
+[node name="Label" type="Label" parent="Control/L1_1b"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 43.5103
+offset_top = 9.97694
+offset_right = 123.51
+offset_bottom = 31.9769
+scale = Vector2(0.932463, 1.60575)
+theme_override_constants/line_spacing = 0
+theme_override_font_sizes/font_size = 13
+text = "i hate you..."
+
+[node name="L1_1c" type="NinePatchRect" parent="Control"]
+layout_mode = 0
+offset_left = 1352.0
+offset_top = 76.0
+offset_right = 1511.0
+offset_bottom = 127.0
+scale = Vector2(0.981397, 0.603036)
+pivot_offset = Vector2(-0.769058, 49.7043)
+texture = ExtResource("8_rcnww")
+region_rect = Rect2(4, 10, 171, 81)
+patch_margin_left = 78
+patch_margin_top = 25
+patch_margin_right = 79
+patch_margin_bottom = 26
+
+[node name="Label" type="Label" parent="Control/L1_1c"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 70.3225
+offset_top = 7.07948
+offset_right = 101.322
+offset_bottom = 30.0795
+scale = Vector2(1.02264, 1.79713)
+theme_override_constants/line_spacing = 0
+theme_override_font_sizes/font_size = 13
+text = "....."
+
+[node name="L1_1d" type="NinePatchRect" parent="Control"]
+layout_mode = 0
+offset_left = 1329.0
+offset_top = 132.0
+offset_right = 1488.0
+offset_bottom = 183.0
+scale = Vector2(1.02025, 0.713101)
+pivot_offset = Vector2(-0.769058, 49.7043)
+texture = ExtResource("8_rcnww")
+region_rect = Rect2(4, 10, 171, 81)
+patch_margin_left = 78
+patch_margin_top = 25
+patch_margin_right = 79
+patch_margin_bottom = 26
+
+[node name="Label" type="Label" parent="Control/L1_1d"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 23.5084
+offset_top = 11.672
+offset_right = 148.508
+offset_bottom = 34.672
+scale = Vector2(0.922703, 1.40592)
+theme_override_constants/line_spacing = 0
+theme_override_font_sizes/font_size = 13
+
+[node name="TextureRect" type="TextureRect" parent="Control/L1_1d"]
+layout_mode = 0
+offset_left = 55.8533
+offset_top = 1.03756
+offset_right = 151.853
+offset_bottom = 93.0376
+scale = Vector2(0.391197, 0.483149)
+texture = ExtResource("9_gtxs8")
+
+[node name="A1_2z" type="NinePatchRect" parent="Control"]
+layout_mode = 0
+offset_left = 1233.0
+offset_top = -12.0
+offset_right = 1392.0
+offset_bottom = 39.0
+scale = Vector2(0.45904, 0.622948)
+pivot_offset = Vector2(0, 50.7934)
+texture = ExtResource("7_85wpj")
+region_rect = Rect2(26, 21, 171, 82)
+patch_margin_left = 75
+patch_margin_top = 25
+patch_margin_right = 84
+patch_margin_bottom = 26
+
+[node name="Label" type="Label" parent="Control/A1_2z"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 41.3907
+offset_top = 7.78277
+offset_right = 77.3907
+offset_bottom = 30.7828
+scale = Vector2(2.07842, 1.74355)
+theme_override_constants/line_spacing = 0
+theme_override_font_sizes/font_size = 13
+text = "uhhh"
+
+[node name="A1_2a" type="NinePatchRect" parent="Control"]
+layout_mode = 0
+offset_left = 1155.0
+offset_top = 38.0
+offset_right = 1321.0
+offset_bottom = 89.0
+scale = Vector2(0.921481, 0.663888)
+pivot_offset = Vector2(0, 50.7934)
+texture = ExtResource("7_85wpj")
+region_rect = Rect2(26, 21, 171, 82)
+patch_margin_left = 79
+patch_margin_top = 25
+patch_margin_right = 87
+patch_margin_bottom = 26
+
+[node name="Label" type="Label" parent="Control/A1_2a"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 24.1417
+offset_top = 9.87676
+offset_right = 158.142
+offset_bottom = 32.8768
+scale = Vector2(0.991979, 1.52857)
+theme_override_constants/line_spacing = 0
+theme_override_font_sizes/font_size = 13
+text = "AHAHAHAHAHAHA"
+
+[node name="L1_2a" type="NinePatchRect" parent="Control"]
+layout_mode = 0
+offset_left = 1363.0
+offset_top = 184.0
+offset_right = 1603.0
+offset_bottom = 235.0
+scale = Vector2(1.01157, 0.662768)
+pivot_offset = Vector2(-0.769058, 49.7043)
+texture = ExtResource("8_rcnww")
+region_rect = Rect2(4, 10, 171, 81)
+patch_margin_left = 78
+patch_margin_top = 25
+patch_margin_right = 79
+patch_margin_bottom = 26
+
+[node name="Label" type="Label" parent="Control/L1_2a"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 12.8425
+offset_top = 9.41214
+offset_right = 244.843
+offset_bottom = 32.4122
+scale = Vector2(0.922703, 1.54433)
+theme_override_constants/line_spacing = 0
+theme_override_font_sizes/font_size = 13
+text = "YOUR NOT EVEN THAT MUCH TALLER"
+
+[node name="L1_2b" type="NinePatchRect" parent="Control"]
+layout_mode = 0
+offset_left = 1322.0
+offset_top = 228.0
+offset_right = 1481.0
+offset_bottom = 279.0
+scale = Vector2(1.01157, 0.662768)
+pivot_offset = Vector2(-0.769058, 49.7043)
+texture = ExtResource("8_rcnww")
+region_rect = Rect2(4, 10, 171, 81)
+patch_margin_left = 78
+patch_margin_top = 25
+patch_margin_right = 79
+patch_margin_bottom = 26
+
+[node name="Label" type="Label" parent="Control/L1_2b"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 66.2249
+offset_top = 9.41223
+offset_right = 123.225
+offset_bottom = 32.4122
+scale = Vector2(0.922703, 1.54433)
+theme_override_constants/line_spacing = 0
+theme_override_font_sizes/font_size = 13
+text = "stfu"
+
+[node name="L1_2c" type="NinePatchRect" parent="Control"]
+layout_mode = 0
+offset_left = 1627.0
+offset_top = 285.0
+offset_right = 1867.0
+offset_bottom = 336.0
+scale = Vector2(1.01157, 0.662768)
+pivot_offset = Vector2(-0.769058, 49.7043)
+texture = ExtResource("8_rcnww")
+region_rect = Rect2(4, 10, 171, 81)
+patch_margin_left = 78
+patch_margin_top = 25
+patch_margin_right = 79
+patch_margin_bottom = 26
+
+[node name="Label" type="Label" parent="Control/L1_2c"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 39.5338
+offset_top = 9.4122
+offset_right = 211.534
+offset_bottom = 32.4122
+scale = Vector2(0.922703, 1.54433)
+theme_override_constants/line_spacing = 0
+theme_override_font_sizes/font_size = 13
+text = "leave me alone ik i'm short"
+
+[node name="L1_2d" type="NinePatchRect" parent="Control"]
+layout_mode = 0
+offset_left = 1304.0
+offset_top = 279.0
+offset_right = 1463.0
+offset_bottom = 330.0
+scale = Vector2(1.01157, 0.662768)
+pivot_offset = Vector2(-0.769058, 49.7043)
+texture = ExtResource("8_rcnww")
+region_rect = Rect2(4, 10, 171, 81)
+patch_margin_left = 78
+patch_margin_top = 25
+patch_margin_right = 79
+patch_margin_bottom = 26
+
+[node name="Label" type="Label" parent="Control/L1_2d"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 67.2134
+offset_top = 6.39459
+offset_right = 91.2134
+offset_bottom = 29.3946
+scale = Vector2(1.31216, 1.63312)
+theme_override_constants/line_spacing = 0
+theme_override_font_sizes/font_size = 13
+text = "....."
+
+[node name="A1_3a" type="NinePatchRect" parent="Control"]
+layout_mode = 0
+offset_left = 1156.0
+offset_top = 184.0
+offset_right = 1357.0
+offset_bottom = 235.0
+scale = Vector2(1.02025, 0.728441)
+pivot_offset = Vector2(0, 50.7934)
+texture = ExtResource("7_85wpj")
+region_rect = Rect2(26, 21, 171, 82)
+patch_margin_left = 75
+patch_margin_top = 25
+patch_margin_right = 84
+patch_margin_bottom = 26
+
+[node name="Label" type="Label" parent="Control/A1_3a"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 14.7023
+offset_top = 10.9824
+offset_right = 180.702
+offset_bottom = 33.9824
+scale = Vector2(0.932625, 1.40592)
+theme_override_constants/line_spacing = 0
+theme_override_font_sizes/font_size = 13
+text = "short person short temper 😎"
+
+[node name="A1_3b" type="NinePatchRect" parent="Control"]
+layout_mode = 0
+offset_left = 1193.0
+offset_top = 227.0
+offset_right = 1352.0
+offset_bottom = 278.0
+scale = Vector2(0.399466, 0.622948)
+pivot_offset = Vector2(0, 50.7934)
+texture = ExtResource("7_85wpj")
+region_rect = Rect2(26, 21, 171, 82)
+patch_margin_left = 75
+patch_margin_top = 25
+patch_margin_right = 84
+patch_margin_bottom = 26
+
+[node name="Label" type="Label" parent="Control/A1_3b"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 69.7106
+offset_top = 9.38804
+offset_right = 76.7106
+offset_bottom = 27.388
+scale = Vector2(2.36781, 1.65224)
+theme_override_constants/line_spacing = 0
+theme_override_font_sizes/font_size = 13
+text = ":]"
+
+[node name="A1_3c" type="NinePatchRect" parent="Control"]
+layout_mode = 0
+offset_left = 1497.0
+offset_top = 290.0
+offset_right = 1656.0
+offset_bottom = 341.0
+scale = Vector2(0.772237, 0.74932)
+pivot_offset = Vector2(0, 50.7934)
+texture = ExtResource("7_85wpj")
+region_rect = Rect2(26, 21, 171, 82)
+patch_margin_left = 75
+patch_margin_top = 25
+patch_margin_right = 84
+patch_margin_bottom = 26
+
+[node name="Label" type="Label" parent="Control/A1_3c"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 31.0
+offset_top = 11.0
+offset_right = 142.0
+offset_bottom = 34.0
+scale = Vector2(1.35221, 1.35742)
+theme_override_constants/line_spacing = 0
+theme_override_font_sizes/font_size = 13
+text = "ye ur small"
+
+[node name="A1_q" type="NinePatchRect" parent="Control"]
+layout_mode = 0
+offset_left = 1314.0
+offset_top = -13.0
+offset_right = 1473.0
+offset_bottom = 38.0
+scale = Vector2(0.399466, 0.622948)
+pivot_offset = Vector2(0, 50.7934)
+texture = ExtResource("7_85wpj")
+region_rect = Rect2(26, 21, 171, 82)
+patch_margin_left = 75
+patch_margin_top = 25
+patch_margin_right = 84
+patch_margin_bottom = 26
+
+[node name="Label" type="Label" parent="Control/A1_q"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 69.7106
+offset_top = 9.38804
+offset_right = 76.7106
+offset_bottom = 27.388
+scale = Vector2(2.36781, 1.65224)
+theme_override_constants/line_spacing = 0
+theme_override_font_sizes/font_size = 13
+text = "?"
+
+[node name="A1_3d" type="NinePatchRect" parent="Control"]
+layout_mode = 0
+offset_left = 1166.0
+offset_top = 280.0
+offset_right = 1425.0
+offset_bottom = 331.0
+scale = Vector2(0.4751, 0.650215)
+pivot_offset = Vector2(0, 50.7934)
+texture = ExtResource("7_85wpj")
+region_rect = Rect2(26, 21, 171, 82)
+patch_margin_left = 75
+patch_margin_top = 25
+patch_margin_right = 84
+patch_margin_bottom = 26
+
+[node name="Label" type="Label" parent="Control/A1_3d"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 56.8302
+offset_top = 8.04842
+offset_right = 118.83
+offset_bottom = 31.0485
+scale = Vector2(2.07842, 1.74355)
+theme_override_constants/line_spacing = 0
+theme_override_font_sizes/font_size = 13
+text = "k sorry xd"
+
+[node name="L1_3a" type="NinePatchRect" parent="Control"]
+layout_mode = 0
+offset_left = 1307.0
+offset_top = 341.0
+offset_right = 1466.0
+offset_bottom = 392.0
+scale = Vector2(1.01157, 0.662768)
+pivot_offset = Vector2(-0.769058, 49.7043)
+texture = ExtResource("8_rcnww")
+region_rect = Rect2(4, 10, 171, 81)
+patch_margin_left = 78
+patch_margin_top = 25
+patch_margin_right = 79
+patch_margin_bottom = 26
+
+[node name="Label" type="Label" parent="Control/L1_3a"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 29.6479
+offset_top = 7.90341
+offset_right = 142.648
+offset_bottom = 30.9034
+scale = Vector2(0.922703, 1.54433)
+theme_override_constants/line_spacing = 0
+theme_override_font_sizes/font_size = 13
+text = "Yeah ill be there :)"
+
+[node name="L1_3b" type="NinePatchRect" parent="Control"]
+layout_mode = 0
+offset_left = 1475.0
+offset_top = 393.0
+offset_right = 1634.0
+offset_bottom = 444.0
+scale = Vector2(1.01157, 0.662768)
+pivot_offset = Vector2(-0.769058, 49.7043)
+texture = ExtResource("8_rcnww")
+region_rect = Rect2(4, 10, 171, 81)
+patch_margin_left = 78
+patch_margin_top = 25
+patch_margin_right = 79
+patch_margin_bottom = 26
+
+[node name="Label" type="Label" parent="Control/L1_3b"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 63.2589
+offset_top = 9.41228
+offset_right = 95.2589
+offset_bottom = 32.4123
+scale = Vector2(0.922703, 1.54433)
+theme_override_constants/line_spacing = 0
+theme_override_font_sizes/font_size = 13
+text = "ew."
+
+[node name="L1_3c" type="NinePatchRect" parent="Control"]
+layout_mode = 0
+offset_left = 1474.0
+offset_top = 342.0
+offset_right = 1633.0
+offset_bottom = 393.0
+scale = Vector2(1.01157, 0.662768)
+pivot_offset = Vector2(-0.769058, 49.7043)
+texture = ExtResource("8_rcnww")
+region_rect = Rect2(4, 10, 171, 81)
+patch_margin_left = 78
+patch_margin_top = 25
+patch_margin_right = 79
+patch_margin_bottom = 26
+
+[node name="Label" type="Label" parent="Control/L1_3c"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 67.2131
+offset_top = 7.90345
+offset_right = 99.2131
+offset_bottom = 30.9035
+scale = Vector2(1.4764, 2.28679)
+theme_override_constants/line_spacing = 0
+theme_override_font_sizes/font_size = 13
+text = "👍"
+
+[node name="L1_3d" type="NinePatchRect" parent="Control"]
+layout_mode = 0
+offset_left = 1367.0
+offset_top = 437.0
+offset_right = 1533.0
+offset_bottom = 488.0
+scale = Vector2(1.01157, 0.662768)
+pivot_offset = Vector2(-0.769058, 49.7043)
+texture = ExtResource("8_rcnww")
+region_rect = Rect2(4, 10, 171, 81)
+patch_margin_left = 78
+patch_margin_top = 25
+patch_margin_right = 79
+patch_margin_bottom = 26
+
+[node name="Label" type="Label" parent="Control/L1_3d"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 14.8196
+offset_top = 9.41226
+offset_right = 166.82
+offset_bottom = 32.4123
+scale = Vector2(0.922703, 1.54433)
+theme_override_constants/line_spacing = 0
+theme_override_font_sizes/font_size = 13
+text = "did you think I was tall?"
+
+[node name="A1_4" type="NinePatchRect" parent="Control"]
+layout_mode = 0
+offset_left = 1165.0
+offset_top = 452.152
+offset_right = 1592.0
+offset_bottom = 503.152
+scale = Vector2(0.45904, 0.622948)
+pivot_offset = Vector2(0, 50.7934)
+texture = ExtResource("7_85wpj")
+region_rect = Rect2(26, 21, 171, 82)
+patch_margin_left = 75
+patch_margin_top = 25
+patch_margin_right = 84
+patch_margin_bottom = 26
+
+[node name="Label" type="Label" parent="Control/A1_4"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 21.7846
+offset_top = 9.38803
+offset_right = 150.785
+offset_bottom = 32.388
+scale = Vector2(2.09333, 1.43718)
+theme_override_constants/line_spacing = 0
+theme_override_font_sizes/font_size = 13
+text = "I thought you were atleast 5'5"
+
+[node name="A1_5" type="NinePatchRect" parent="Control"]
+layout_mode = 0
+offset_left = 1168.0
+offset_top = 333.0
+offset_right = 1327.0
+offset_bottom = 384.0
+scale = Vector2(0.45904, 0.622948)
+pivot_offset = Vector2(0, 50.7934)
+texture = ExtResource("7_85wpj")
+region_rect = Rect2(26, 21, 171, 82)
+patch_margin_left = 75
+patch_margin_top = 25
+patch_margin_right = 84
+patch_margin_bottom = 26
+
+[node name="Label" type="Label" parent="Control/A1_5"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 37.0338
+offset_top = 7.78277
+offset_right = 75.0338
+offset_bottom = 30.7828
+scale = Vector2(2.276, 1.63059)
+theme_override_constants/line_spacing = 0
+theme_override_font_sizes/font_size = 13
+text = "its ok"
+
+[node name="A1_6" type="NinePatchRect" parent="Control"]
+layout_mode = 0
+offset_left = 1165.0
+offset_top = 387.0
+offset_right = 1579.0
+offset_bottom = 438.0
+scale = Vector2(0.45904, 0.622948)
+pivot_offset = Vector2(0, 50.7934)
+texture = ExtResource("7_85wpj")
+region_rect = Rect2(26, 21, 171, 82)
+patch_margin_left = 75
+patch_margin_top = 25
+patch_margin_right = 84
+patch_margin_bottom = 26
+
+[node name="Label" type="Label" parent="Control/A1_6"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 21.7846
+offset_top = 7.78272
+offset_right = 185.785
+offset_bottom = 30.7828
+scale = Vector2(2.276, 1.63059)
+theme_override_constants/line_spacing = 0
+theme_override_font_sizes/font_size = 13
+text = "short means you're cute :)"
+
+[node name="A1_jk" type="NinePatchRect" parent="Control"]
+layout_mode = 0
+offset_left = 1170.0
+offset_top = 476.0
+offset_right = 1329.0
+offset_bottom = 527.0
+scale = Vector2(0.45904, 0.622948)
+pivot_offset = Vector2(0, 50.7934)
+texture = ExtResource("7_85wpj")
+region_rect = Rect2(26, 21, 171, 82)
+patch_margin_left = 75
+patch_margin_top = 25
+patch_margin_right = 84
+patch_margin_bottom = 26
+
+[node name="Label" type="Label" parent="Control/A1_jk"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 21.7846
+offset_top = 6.17751
+offset_right = 75.7846
+offset_bottom = 29.1775
+scale = Vector2(2.276, 1.63059)
+theme_override_constants/line_spacing = 0
+theme_override_font_sizes/font_size = 13
+text = "jk haha.."
+
+[node name="msg_sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("10_wthwp")
+volume_db = 3.104
+panning_strength = 0.0
+
+[node name="msg_recieved" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("11_wmoxc")
+volume_db = -6.209
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+offset_left = 679.0
+offset_top = 12.0
+offset_right = 803.0
+offset_bottom = 59.0
+scale = Vector2(1, 1.01471)
+
+[node name="ColorRect" type="ColorRect" parent="PanelContainer"]
+layout_mode = 2
+color = Color(0.180005, 0.180005, 0.180005, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="Continue_button" type="Button" parent="PanelContainer/MarginContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_3w6xt")
+theme_override_font_sizes/font_size = 18
+text = "Continue"

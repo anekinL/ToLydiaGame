@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3 uid="uid://r1pdkxhndv8r"]
+
+[ext_resource type="Texture2D" uid="uid://bstik1ywh6d8d" path="res://sprites/test_guy_pixel.webp" id="1_fimvb"]
+[ext_resource type="Script" path="res://scenes/Prefabs/Scripts/test_pixel_guy_script.gd" id="2_0j5ng"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_smdah"]
+atlas = ExtResource("1_fimvb")
+region = Rect2(0, 0, 320, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mkxif"]
+atlas = ExtResource("1_fimvb")
+region = Rect2(320, 0, 320, 320)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6wm58"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_smdah")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mkxif")
+}, {
+"duration": 10.0,
+"texture": SubResource("AtlasTexture_mkxif")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mkxif")
+}],
+"loop": true,
+"name": &"walk_forward",
+"speed": 5.0
+}]
+
+[node name="test_anim_guy" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_6wm58")
+animation = &"walk_forward"
+frame = 2
+frame_progress = 0.973024
+script = ExtResource("2_0j5ng")

@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://dgah5ylhes8vs"]
+
+[ext_resource type="Texture2D" uid="uid://cqm6jwapthfu" path="res://sprites/bg_2.png" id="1_g3ido"]
+[ext_resource type="Shader" path="res://scenes/Prefabs/Scripts/bg_scroll.gdshader" id="1_yjl1e"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_svrjj"]
+shader = ExtResource("1_yjl1e")
+shader_parameter/speed = 0.2
+
+[node name="bg_scroll" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -581.0
+offset_top = -331.0
+offset_right = 577.0
+offset_bottom = 324.0
+color = Color(0.61192, 0.547704, 0.795489, 1)
+
+[node name="TextureRect" type="TextureRect" parent="ColorRect"]
+material = SubResource("ShaderMaterial_svrjj")
+layout_mode = 0
+offset_right = 1159.0
+offset_bottom = 653.0
+texture = ExtResource("1_g3ido")
+stretch_mode = 1

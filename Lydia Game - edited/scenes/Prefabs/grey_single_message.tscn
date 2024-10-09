@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://dvmhlc7qk20u3"]
+
+[ext_resource type="Texture2D" uid="uid://bedr7utj2dvq7" path="res://sprites/grey_message.png" id="1_ovj5t"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="greytext_single" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_left = -0.999996
+offset_top = -1.52588e-05
+offset_right = 158.0
+offset_bottom = 51.0
+scale = Vector2(1.02025, 0.728441)
+texture = ExtResource("1_ovj5t")
+region_rect = Rect2(26, 21, 171, 82)
+patch_margin_left = 75
+patch_margin_top = 25
+patch_margin_right = 84
+patch_margin_bottom = 26
+
+[node name="Label" type="Label" parent="greytext_single"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 14.7023
+offset_top = 10.9824
+offset_right = 180.702
+offset_bottom = 33.9824
+scale = Vector2(0.922703, 1.40592)
+theme_override_constants/line_spacing = 0
+theme_override_font_sizes/font_size = 13
+text = "this is a text message"

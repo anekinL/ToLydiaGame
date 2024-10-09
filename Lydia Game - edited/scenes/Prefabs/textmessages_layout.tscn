@@ -1,0 +1,129 @@
+[gd_scene load_steps=4 format=3 uid="uid://lg50rx1qmimc"]
+
+[ext_resource type="Texture2D" uid="uid://bedr7utj2dvq7" path="res://sprites/grey_message.png" id="1_52557"]
+[ext_resource type="Texture2D" uid="uid://fpwyy860kilu" path="res://sprites/blue_message.png" id="2_fnjob"]
+[ext_resource type="Texture2D" uid="uid://c1j4y0autx085" path="res://sprites/phone_text_screen.png" id="3_pnclu"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="greytext_single" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_left = 59.0
+offset_top = 143.0
+offset_right = 218.0
+offset_bottom = 194.0
+scale = Vector2(1.02025, 0.728441)
+pivot_offset = Vector2(-0.181332, 51.7544)
+texture = ExtResource("1_52557")
+region_rect = Rect2(26, 21, 171, 82)
+patch_margin_left = 75
+patch_margin_top = 25
+patch_margin_right = 84
+patch_margin_bottom = 26
+
+[node name="Label" type="Label" parent="greytext_single"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 14.7023
+offset_top = 10.9824
+offset_right = 180.702
+offset_bottom = 33.9824
+scale = Vector2(0.922703, 1.40592)
+theme_override_constants/line_spacing = 0
+theme_override_font_sizes/font_size = 13
+text = "this is a text message"
+
+[node name="greytext_double" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 188.0
+offset_right = 215.0
+offset_bottom = 239.0
+scale = Vector2(1.1808, 0.908932)
+pivot_offset = Vector2(0, 50.6089)
+texture = ExtResource("1_52557")
+region_rect = Rect2(26, 21, 171, 82)
+patch_margin_left = 75
+patch_margin_top = 25
+patch_margin_right = 84
+patch_margin_bottom = 26
+
+[node name="Label" type="Label" parent="greytext_double"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 17.6279
+offset_top = 4.07069
+offset_right = 183.628
+offset_bottom = 40.0707
+scale = Vector2(0.794718, 1.03894)
+theme_override_constants/line_spacing = 0
+theme_override_font_sizes/font_size = 13
+text = "this is a text message
+but two layers"
+
+[node name="bluetext_single" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_left = 208.0
+offset_top = 240.0
+offset_right = 367.0
+offset_bottom = 291.0
+scale = Vector2(1.02025, 0.728441)
+pivot_offset = Vector2(0, 50.7934)
+texture = ExtResource("2_fnjob")
+region_rect = Rect2(4, 10, 171, 81)
+patch_margin_left = 78
+patch_margin_top = 25
+patch_margin_right = 79
+patch_margin_bottom = 26
+
+[node name="Label" type="Label" parent="bluetext_single"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 14.7023
+offset_top = 10.9824
+offset_right = 180.702
+offset_bottom = 33.9824
+scale = Vector2(0.922703, 1.40592)
+theme_override_constants/line_spacing = 0
+theme_override_font_sizes/font_size = 13
+text = "this is a text message"
+
+[node name="phone_imessage" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(206.185, 331.3)
+scale = Vector2(0.595, 0.595)
+texture = ExtResource("3_pnclu")
+
+[node name="bluetext_double" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_left = 187.0
+offset_top = 287.0
+offset_right = 346.0
+offset_bottom = 338.0
+scale = Vector2(1.16307, 0.880662)
+pivot_offset = Vector2(0, 51.0979)
+texture = ExtResource("2_fnjob")
+region_rect = Rect2(4, 10, 171, 81)
+patch_margin_left = 81
+patch_margin_top = 25
+patch_margin_right = 78
+patch_margin_bottom = 26
+
+[node name="Label" type="Label" parent="bluetext_double"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 17.6279
+offset_top = 4.07069
+offset_right = 183.628
+offset_bottom = 40.0707
+scale = Vector2(0.789832, 1.12867)
+theme_override_constants/line_spacing = 0
+theme_override_font_sizes/font_size = 13
+text = "this is a text message
+but two layers"

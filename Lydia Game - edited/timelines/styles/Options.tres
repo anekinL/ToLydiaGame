@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="DialogicStyle" load_steps=2 format=3 uid="uid://ckelcj324fefi"]
+
+[ext_resource type="Script" path="res://addons/dialogic/Resources/dialogic_style.gd" id="10_gfqwy"]
+
+[resource]
+script = ExtResource("10_gfqwy")
+name = "Options"
+base_overrides = {}
+layers = Array[Resource("res://addons/dialogic/Resources/dialogic_style_layer.gd")]([])

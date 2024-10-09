@@ -1,0 +1,97 @@
+[gd_scene load_steps=6 format=3 uid="uid://bissr0nht4lvw"]
+
+[ext_resource type="PackedScene" uid="uid://dgah5ylhes8vs" path="res://scenes/Prefabs/bg_scroll.tscn" id="1_75s6n"]
+[ext_resource type="Script" path="res://scenes/Levels/level_scripts/level_6_script.gd" id="1_shdka"]
+[ext_resource type="Texture2D" uid="uid://cjmvefnym2hcs" path="res://sprites/empty_polaroid.png" id="2_bc6ld"]
+[ext_resource type="Texture2D" uid="uid://c58limwct1x7a" path="res://sprites/image-placeholder-500x500.jpg" id="4_vd2lv"]
+[ext_resource type="FontFile" uid="uid://d2x57q70kr1ns" path="res://sprites/Fonts/Retro Gaming.ttf" id="6_s6ai1"]
+
+[node name="Level_6" type="Node2D"]
+script = ExtResource("1_shdka")
+
+[node name="bg_scroll" parent="." instance=ExtResource("1_75s6n")]
+offset_left = 4.0
+offset_top = 3.0
+offset_right = 4.0
+offset_bottom = 3.0
+metadata/_edit_lock_ = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+metadata/_edit_lock_ = true
+
+[node name="EmptyPolaroid" type="Sprite2D" parent="."]
+position = Vector2(-370, 36)
+rotation = 0.261799
+scale = Vector2(0.574398, 0.702244)
+texture = ExtResource("2_bc6ld")
+
+[node name="Level1bPic1" type="Sprite2D" parent="EmptyPolaroid"]
+position = Vector2(-44.2382, -173.002)
+scale = Vector2(0.957481, 0.820726)
+texture = ExtResource("4_vd2lv")
+
+[node name="EmptyPolaroid2" type="Sprite2D" parent="."]
+position = Vector2(-7, -116)
+rotation = -0.174533
+scale = Vector2(0.549969, 0.425876)
+texture = ExtResource("2_bc6ld")
+
+[node name="Sprite2D" type="Sprite2D" parent="EmptyPolaroid2"]
+position = Vector2(-46.4597, -173.876)
+scale = Vector2(0.949951, 0.795104)
+texture = ExtResource("4_vd2lv")
+
+[node name="EmptyPolaroid3" type="Sprite2D" parent="."]
+position = Vector2(371, -49)
+rotation = 0.174533
+scale = Vector2(0.809921, 0.396819)
+texture = ExtResource("2_bc6ld")
+
+[node name="Sprite2D" type="Sprite2D" parent="EmptyPolaroid3"]
+position = Vector2(-42.013, -175.278)
+scale = Vector2(0.953701, 0.81797)
+texture = ExtResource("4_vd2lv")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+offset_left = 803.0
+offset_top = -186.0
+offset_right = 1032.0
+offset_bottom = -116.0
+scale = Vector2(1, 1.01471)
+
+[node name="ColorRect" type="ColorRect" parent="PanelContainer"]
+layout_mode = 2
+color = Color(0.180005, 0.180005, 0.180005, 1)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="Replay" type="Button" parent="PanelContainer/HBoxContainer/MarginContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_s6ai1")
+theme_override_font_sizes/font_size = 18
+text = "Replay 
+Memories"
+
+[node name="MarginContainer2" type="MarginContainer" parent="PanelContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="Continue_button" type="Button" parent="PanelContainer/HBoxContainer/MarginContainer2"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_s6ai1")
+theme_override_font_sizes/font_size = 18
+text = "Continue"
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(-101, 168)

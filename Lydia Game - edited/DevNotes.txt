@@ -1,0 +1,16 @@
+single text y-gap is 60px
+
+grey_msg is -252x
+
+bug using incorrect array pointer****
+
+Try using different asset
+	scratch that im making my own
+	
+1093455
+
+rename scenes later**
+
+["wtf fr?", "are you okay???", "what? wym??", "are you stupid?"]
+
+"you dumbass", "why would you open the door so late", "Anekin.....", "LMFAO"]
